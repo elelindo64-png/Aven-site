@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>AVEN – Seu talento não tem fronteiras</title>
+    <meta name="description" content="Plataforma de empregabilidade nacional e internacional.">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <main id="main">
+      <section class="dark hero">
+        <img class="hero-backdrop" src="assets/imagens/capa-inicio.jpg" alt="" aria-hidden="true" onerror="this.remove()">
+        <div class="wrap">
+          <h1 data-i18n="h1">Seu talento não tem fronteiras.</h1>
+          <p class="sub mut" data-i18n="sub">
+            Encontre oportunidades no Brasil e no mundo. Conectamos pessoas, empresas e talentos sem barreiras.
+          </p>
+        </div>
+
+        <div class="led" id="led" role="region" aria-label="Painel eletrônico de oportunidades">
+          <div class="led-screen" aria-live="polite" aria-atomic="true">
+            <div class="led-window" aria-hidden="true">
+              <div class="led-track"></div>
+            </div>
+            <p class="led-status"><span>DESTINO</span> BRASIL <span>/</span> <span>STATUS</span> OPORTUNIDADES ABERTAS</p>
+          </div>
+          <button class="btn ghost sm" type="button" data-led-toggle aria-pressed="false">Pausar painel</button>
+          <p class="sr" data-led-live aria-live="polite">Oportunidades no Brasil. Destino Brasil. Status: oportunidades abertas.</p>
+        </div>
+
+        <div class="wrap">
+          <form id="hsearch" class="search" role="search">
+            <div>
+              <label for="hq">Cargo ou palavra-chave</label>
+              <input id="hq" name="q" placeholder="Ex.: designer">
+            </div>
+
+            <div>
+              <label for="hl">Cidade ou país</label>
+              <input id="hl" name="loc" placeholder="Ex.: Portugal">
+            </div>
+
+            <button class="btn" type="submit">Encontrar oportunidades</button>
+            <a class="btn ghost" href="empresas.html">Sou uma empresa</a>
+          </form>
+        </div>
+      </section>
+
+      <section class="sec">
+        <div class="wrap">
+          <div class="head">
+            <h2>Escolha seu caminho</h2>
+          </div>
+
+          <ul class="rows">
+            <li><a href="vagas.html?f=remoto"><span class="row-title"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="15" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 20h30M20 5c-8 8-8 22 0 30m0-30c8 8 8 22 0 30" fill="none" stroke="currentColor" stroke-width="2"/></svg>Trabalho remoto</span><small>Qualquer lugar</small></a></li>
+            <li><a href="vagas.html?f=ext"><span class="row-title"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M5 20h29m-8-8 8 8-8 8M18 7H8v10m4-8 6-2" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Empregos internacionais</span><small>Exterior</small></a></li>
+            <li><a href="vagas.html?f=first"><span class="row-title"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M7 32h26M12 27V13h16v14M17 13V8h6v5m-3 5v8m-4-4h8" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Primeiro emprego</span><small>Sem experiência prévia</small></a></li>
+            <li><a href="vagas.html?f=pcd"><span class="row-title"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="8" r="2.8" fill="currentColor"/><path d="M8 15c3.8-1.6 7.8-2.4 12-2.4s8.2.8 12 2.4M20 13v11m0 0-7 11m7-11 7 11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Vagas inclusivas</span><small>PcD</small></a></li>
+            <li><a href="vagas.html?f=freela"><span class="row-title"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M7 12h26v21H7zM14 12V7h12v5m-19 8h26m-16-3v6h6v-6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/></svg>Freelancer</span><small>Por projeto</small></a></li>
+            <li><a href="vagas.html?f=presencial"><span class="row-title"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M6 33V14l14-8 14 8v19M12 33V19h16v14m-12-9h2m4 0h2m-8 6h2m4 0h2" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Trabalho presencial</span><small>Perto de você</small></a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="sec globe-section dark">
+        <div class="wrap globe-layout">
+          <div>
+            <p class="eyebrow">Conexões sem fronteiras</p>
+            <h2>Talento em movimento pelo mundo.</h2>
+            <p class="mut">Uma rede fictícia de oportunidades conectando São Paulo, Lisboa, Toronto, Berlim e Nova York.</p>
+          </div>
+          <svg class="world-map" viewBox="0 0 760 390" role="img" aria-labelledby="map-title map-desc">
+            <title id="map-title">Mapa de conexões internacionais da AVEN</title>
+            <desc id="map-desc">Mapa pontilhado com rotas luminosas entre São Paulo, Lisboa, Toronto, Berlim e Nova York.</desc>
+            <defs>
+              <pattern id="map-dots" width="9" height="9" patternUnits="userSpaceOnUse">
+                <circle cx="2" cy="2" r="1.7" fill="#6c8caa" opacity=".62"/>
+              </pattern>
+              <linearGradient id="route-glow" x1="0" x2="1">
+                <stop stop-color="#3cffa8"/><stop offset="1" stop-color="#72d8ff"/>
+              </linearGradient>
+            </defs>
+            <path class="continent-dots" d="M56 92 87 65 144 54 177 72 220 70 245 97 231 125 198 139 185 170 150 179 136 211 107 205 91 174 68 156 49 126Z M207 204 239 217 257 247 249 280 230 321 210 344 194 316 200 284 183 250Z M333 89 366 68 419 70 443 91 468 88 481 112 469 128 441 129 430 151 401 143 380 160 356 139 331 131Z M361 164 402 158 446 170 468 200 455 239 433 272 415 313 389 325 374 294 379 263 358 235 349 199Z M457 91 503 63 579 61 639 83 685 112 666 143 624 151 593 136 563 156 529 146 503 128 473 129Z M586 226 621 210 652 225 663 252 645 272 611 267 589 250Z" fill="url(#map-dots)"/>
+            <g class="map-routes" fill="none" stroke="url(#route-glow)" stroke-width="2">
+              <path d="M238 274 Q315 85 413 120"/>
+              <path d="M238 274 Q375 205 535 128"/>
+              <path d="M238 274 Q322 140 370 126"/>
+              <path d="M370 126 Q412 99 413 120"/>
+              <path d="M370 126 Q453 89 535 128"/>
+            </g>
+            <g class="map-city">
+              <circle cx="238" cy="274" r="6"/><text x="202" y="297">São Paulo</text>
+              <circle cx="370" cy="126" r="6"/><text x="326" y="113">Lisboa</text>
+              <circle cx="413" cy="120" r="6"/><text x="389" y="98">Toronto</text>
+              <circle cx="535" cy="128" r="6"/><text x="539" y="133">Berlim</text>
+              <circle cx="454" cy="144" r="6"/><text x="458" y="165">Nova York</text>
+            </g>
+          </svg>
+          <div class="stats" aria-label="Números de demonstração">
+            <p><strong data-count="9">0</strong><span>vagas fictícias</span></p>
+            <p><strong data-count="5">0</strong><span>empresas fictícias</span></p>
+            <p><strong data-count="5">0</strong><span>cidades conectadas</span></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec">
+        <div class="wrap">
+          <div class="head"><div><p class="eyebrow">Mercado em movimento</p><h2>Profissões em alta</h2></div><div class="auth-actions"><button class="btn ghost" type="button" data-profession-images>Adicionar imagens</button><a class="btn ghost" href="profissoes.html">Ver guia de profissões</a></div></div>
+          <p class="mut">Valores e quantidades de demonstração.</p>
+          <!-- Fotos locais opcionais ou URLs por profissão podem ser configuradas em profissoes.js. -->
+          <div id="profissoes" class="profs"></div>
+        </div>
+      </section>
+      <section class="sec">
+        <div class="wrap">
+          <div class="head">
+            <h2>Vagas em destaque</h2>
+            <a class="btn ghost" href="vagas.html">Ver todas as vagas</a>
+          </div>
+          <p class="mut">Vagas de demonstração, fictícias.</p>
+          <div id="featured" class="jobs"></div>
+        </div>
+      </section>
+
+      <section class="sec dark">
+        <div class="wrap">
+          <h2 style="max-width:30rem">Feito para quem sempre ficou de fora.</h2>
+          <div class="diff" style="margin-top:2.5rem">
+            <div>
+              <svg class="diff-icon" viewBox="0 0 48 48" role="img" aria-label="Ícone de inclusão"><circle cx="24" cy="14" r="7" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M9 39c1-10 6-15 15-15s14 5 15 15M24 24v13m-7-6h14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+              <h3>Inclusão profissional</h3>
+              <p>Vagas e empresas com compromisso real com a diversidade.</p>
+            </div>
+            <div>
+              <svg class="diff-icon" viewBox="0 0 48 48" role="img" aria-label="Ícone de acessibilidade"><circle cx="24" cy="8" r="3.5" fill="currentColor"/><path d="M10 18c4.5-1.9 9.2-2.8 14-2.8s9.5.9 14 2.8M24 15v13m0 0-8 13m8-13 8 13" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <h3>Acessibilidade</h3>
+              <p>Plataforma navegável por teclado e leitor de tela.</p>
+            </div>
+            <div>
+              <svg class="diff-icon" viewBox="0 0 48 48" role="img" aria-label="Ícone de conexões internacionais"><circle cx="24" cy="24" r="17" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M7 24h34M24 7c-9 9-9 25 0 34m0-34c9 9 9 25 0 34" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+              <h3>Empregabilidade internacional</h3>
+              <p>Vagas no exterior com requisitos claros.</p>
+            </div>
+            <div>
+              <svg class="diff-icon" viewBox="0 0 48 48" role="img" aria-label="Ícone de idiomas"><path d="M8 12h21M18 7v5m-8 4c3 7 9 12 16 14m-7-14c-2 7-6 12-12 15M26 37l7-18 7 18m-11-6h8" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <h3>Currículo multilíngue</h3>
+              <p>Um perfil, vários idiomas.</p>
+            </div>
+            <div>
+              <svg class="diff-icon" viewBox="0 0 48 48" role="img" aria-label="Ícone de orientação profissional"><path d="M24 7v34m-17-17h34M12 12l24 24m0-24L12 36" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+              <h3>Orientação profissional</h3>
+              <p>Apoio para decidir e se preparar.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec access-feature">
+        <div class="wrap">
+          <div class="head"><div><p class="eyebrow">Inclusão que se percebe</p><h2>Acessibilidade de verdade</h2></div></div>
+          <div class="access-grid">
+            <article><svg viewBox="0 0 48 48" role="img" aria-label="Ícone de acesso sem barreiras"><path d="M8 36h32M12 32V14h10a8 8 0 0 1 0 16h-4M25 14h11M31 9l5 5-5 5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><h3>Rotas acessíveis</h3><p>Informações claras sobre rampas, elevadores e circulação.</p></article>
+            <article><svg viewBox="0 0 48 48" role="img" aria-label="Ícone de comunicação inclusiva"><path d="M7 10h34v23H22l-9 7v-7H7zM14 18h20M14 25h13" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><h3>Comunicação acessível</h3><p>Recursos de Libras, legendas e materiais em formatos acessíveis.</p></article>
+            <article><svg viewBox="0 0 48 48" role="img" aria-label="Ícone de compatibilidade com leitores de tela"><path d="M4 24s7-12 20-12 20 12 20 12-7 12-20 12S4 24 4 24Zm20-6a6 6 0 1 0 0 12 6 6 0 0 0 0-12Z" fill="none" stroke="currentColor" stroke-width="3"/></svg><h3>Compatível com leitores</h3><p>Navegação por teclado, foco visível e estrutura semântica.</p></article>
+            <article><svg viewBox="0 0 48 48" role="img" aria-label="Ícone de ambiente sensorialmente acolhedor"><path d="M24 5v38M5 24h38M10 10l28 28M38 10 10 38" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg><h3>Respeito sensorial</h3><p>Opções para reduzir movimento e personalizar a leitura.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec dark">
+        <div class="wrap">
+          <h2 style="max-width:38rem">Seu próximo trabalho pode estar em qualquer lugar do mundo.</h2>
+          <div class="world">
+            <div><span class="country"><img class="country-flag" src="assets/icones/bandeiras/Brasil.jpg" alt="" aria-hidden="true">Brasil</span><svg class="city-silhouette" viewBox="0 0 64 24" aria-hidden="true"><path d="M2 23V13h8v10m2 0V6h9v17m3 0V11h6v12m2 0V2h11v21m3 0V9h8v14m2 0V14h9v9" fill="#3cffa8"/></svg><small>Presencial, híbrido, remoto</small></div>
+            <div><span class="country"><img class="country-flag" src="assets/icones/bandeiras/Estados Unidos.jpg" alt="" aria-hidden="true">Estados Unidos</span><svg class="city-silhouette" viewBox="0 0 64 24" aria-hidden="true"><path d="M2 23V13h8v10m2 0V6h9v17m3 0V11h6v12m2 0V2h11v21m3 0V9h8v14m2 0V14h9v9" fill="#3cffa8"/></svg><small>Remoto</small></div>
+            <div><span class="country"><img class="country-flag" src="assets/icones/bandeiras/Canada.jpg" alt="" aria-hidden="true">Canadá</span><svg class="city-silhouette" viewBox="0 0 64 24" aria-hidden="true"><path d="M2 23V13h8v10m2 0V6h9v17m3 0V11h6v12m2 0V2h11v21m3 0V9h8v14m2 0V14h9v9" fill="#3cffa8"/></svg><small>Remoto e relocação</small></div>
+            <div><span class="country"><img class="country-flag" src="assets/icones/bandeiras/Portugal.jpg" alt="" aria-hidden="true">Portugal</span><svg class="city-silhouette" viewBox="0 0 64 24" aria-hidden="true"><path d="M2 23V13h8v10m2 0V6h9v17m3 0V11h6v12m2 0V2h11v21m3 0V9h8v14m2 0V14h9v9" fill="#3cffa8"/></svg><small>Presencial</small></div>
+            <div><span class="country"><img class="country-flag" src="assets/icones/bandeiras/Alemanha.jpg" alt="" aria-hidden="true">Alemanha</span><svg class="city-silhouette" viewBox="0 0 64 24" aria-hidden="true"><path d="M2 23V13h8v10m2 0V6h9v17m3 0V11h6v12m2 0V2h11v21m3 0V9h8v14m2 0V14h9v9" fill="#3cffa8"/></svg><small>Híbrido</small></div>
+            <div><span class="country"><svg viewBox="0 0 48 32" role="img" aria-label="Mapa-múndi pontilhado"><circle cx="24" cy="16" r="13" fill="none" stroke="#3cffa8" stroke-width="2"/><path d="M11 16h26M24 3c-7 7-7 19 0 26m0-26c7 7 7 19 0 26" fill="none" stroke="#3cffa8"/></svg>E muito mais</span><svg class="city-silhouette" viewBox="0 0 64 24" aria-hidden="true"><path d="M2 23V13h8v10m2 0V6h9v17m3 0V11h6v12m2 0V2h11v21m3 0V9h8v14m2 0V14h9v9" fill="#3cffa8"/></svg><small>Em expansão</small></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="main.js"></script>
+    <script src="cadastro.js"></script>
+    <script src="profissoes.js"></script>
+  </body>
+</html>

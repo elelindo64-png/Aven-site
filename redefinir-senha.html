@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Recuperar senha – AVEN</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main id="main">
+      <section class="profile-page">
+        <div class="wrap">
+          <div class="profile-card">
+            <p class="eyebrow">Conta AVEN</p>
+            <h1>Recuperar senha</h1>
+            <p class="mut">Esta é uma simulação. Nenhuma senha será alterada nem e-mail enviado.</p>
+            <p id="reset-status" class="auth-status" role="status" aria-live="polite"></p>
+            <form id="reset-password-form" class="auth-form" hidden>
+              <div class="field-group">
+                <label for="reset-email">E-mail</label>
+                <input id="reset-email" type="email" autocomplete="email" required>
+              </div>
+              <div class="auth-actions">
+                <button class="btn" type="submit">Simular recuperação</button>
+              </div>
+            </form>
+            <p><a href="index.html">Voltar ao início</a></p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="main.js"></script>
+    <script src="redefinir-senha.js"></script>
+  </body>
+</html>

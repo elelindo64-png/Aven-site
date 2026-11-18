@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Empresas e talentos – AVEN</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <main id="main">
+      <div class="dark">
+        <div class="wrap page" style="padding-bottom:3rem">
+          <h1>Encontre talentos sem fronteiras.</h1>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <div class="split" style="padding:4rem 0">
+          <section id="empresa" aria-labelledby="h-e">
+            <h2 id="h-e">Para empresas</h2>
+            <p class="mut">Contrate no Brasil e no exterior, com recrutamento inclusivo.</p>
+
+            <ul>
+              <li>Divulgação de vagas</li>
+              <li>Busca de profissionais</li>
+              <li>Banco de talentos</li>
+              <li>Recrutamento inclusivo</li>
+              <li>Profissionais internacionais</li>
+            </ul>
+
+            <form class="demo" novalidate aria-label="Cadastro de empresa (demonstração)">
+              <div>
+                <label for="en">Nome da empresa</label>
+                <input id="en" required aria-describedby="en-e">
+                <div class="err" id="en-e"></div>
+              </div>
+
+              <div>
+                <label for="ee">E-mail corporativo</label>
+                <input id="ee" type="email" required aria-describedby="ee-e">
+                <div class="err" id="ee-e"></div>
+              </div>
+
+              <button class="btn">Cadastrar minha empresa</button>
+            </form>
+          </section>
+
+          <section id="perfil" aria-labelledby="h-p">
+            <h2 id="h-p">Para profissionais</h2>
+            <p class="mut">Monte seu perfil e mostre seu talento em qualquer idioma.</p>
+
+            <ul>
+              <li>Criação de currículo</li>
+              <li>Perfil profissional</li>
+              <li>Currículo em outros idiomas</li>
+              <li>Orientação de carreira</li>
+              <li>Cursos e capacitações</li>
+              <li>Preparação para entrevistas</li>
+            </ul>
+
+            <form class="demo" novalidate aria-label="Criação de perfil (demonstração)">
+              <div>
+                <label for="pn">Nome completo</label>
+                <input id="pn" required aria-describedby="pn-e">
+                <div class="err" id="pn-e"></div>
+              </div>
+
+              <div>
+                <label for="pe">E-mail</label>
+                <input id="pe" type="email" required aria-describedby="pe-e">
+                <div class="err" id="pe-e"></div>
+              </div>
+
+              <button class="btn">Criar meu perfil</button>
+            </form>
+          </section>
+        </div>
+      </div>
+
+      <section class="sec" aria-labelledby="companies-title">
+        <div class="wrap">
+          <div class="head">
+            <div><p class="eyebrow">Rede de talentos AVEN</p><h2 id="companies-title">Empresas que contratam</h2></div>
+            <p class="mut">Perfis demonstrativos. Selecione um cartão para conhecer a empresa.</p>
+          </div>
+          <div id="company-list" class="company-list" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="sec course-section" aria-labelledby="courses-title">
+        <div class="wrap">
+          <div class="head">
+            <div><p class="eyebrow">Aprender e avançar</p><h2 id="courses-title">Cursos e capacitações</h2></div>
+            <p class="mut">Cursos e agendas fictícios, sem inscrição real ou envio de dados.</p>
+          </div>
+          <form id="course-filters" class="course-filters" aria-label="Filtros de cursos">
+            <label class="ck"><input type="checkbox" name="online">Online</label>
+            <label class="ck"><input type="checkbox" name="presencial">Presencial</label>
+            <label class="ck"><input type="checkbox" name="gratuito">Gratuito</label>
+            <label class="ck"><input type="checkbox" name="certificado">Com certificado</label>
+            <label class="ck"><input type="checkbox" name="acessibilidade">Recursos de acessibilidade</label>
+          </form>
+          <p id="course-count" class="mut" role="status"></p>
+          <div id="course-list" class="course-list"></div>
+        </div>
+      </section>
+
+      <section class="sec dark">
+        <div class="wrap">
+          <h2 style="max-width:34rem">Impacto social: trabalho para todas as pessoas.</h2>
+          <div class="diff" style="margin-top:2.5rem">
+            <div>
+              <h3>Pessoas com deficiência</h3>
+              <p>Vagas e processos acessíveis.</p>
+            </div>
+            <div>
+              <h3>Jovens</h3>
+              <p>Primeiro emprego com orientação.</p>
+            </div>
+            <div>
+              <h3>Profissionais experientes</h3>
+              <p>Valorização de trajetória.</p>
+            </div>
+            <div>
+              <h3>Estrangeiros</h3>
+              <p>Currículo e vagas multilíngues.</p>
+            </div>
+            <div>
+              <h3>Sem experiência</h3>
+              <p>Chances baseadas em potencial.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="main.js"></script>
+    <script src="cadastro.js"></script>
+    <script src="empresas.js"></script>
+  </body>
+</html>

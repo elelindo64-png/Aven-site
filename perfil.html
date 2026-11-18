@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Meu perfil – AVEN</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main id="main">
+      <section class="profile-page">
+        <div class="wrap">
+          <div class="profile-card">
+            <p class="eyebrow">Conta AVEN</p>
+            <h1>Meu perfil</h1>
+            <p class="mut">Perfil demonstrativo: as alterações ficam apenas neste navegador.</p>
+            <p id="profile-status" class="auth-status" role="status" aria-live="polite"></p>
+            <form id="profile-form" class="profile-form" hidden>
+              <p><strong>Identificação local:</strong> <span id="profile-email"></span></p>
+              <div class="profile-grid">
+                <div class="field-group">
+                  <label for="profile-name">Nome completo</label>
+                  <input id="profile-name" name="full_name" maxlength="120" autocomplete="name" required>
+                </div>
+                <div class="field-group">
+                  <label for="profile-type">Tipo de perfil</label>
+                  <select id="profile-type" name="account_type">
+                    <option value="candidate">Candidato(a)</option>
+                    <option value="company">Empresa</option>
+                  </select>
+                </div>
+                <div class="field-group profile-wide">
+                  <label for="profile-headline">Título profissional</label>
+                  <input id="profile-headline" name="headline" maxlength="120" placeholder="Ex.: Analista de dados em início de carreira">
+                </div>
+                <div class="field-group profile-wide">
+                  <label for="profile-city">Cidade</label>
+                  <input id="profile-city" name="city" maxlength="120" autocomplete="address-level2">
+                </div>
+                <div class="field-group profile-wide">
+                  <label for="profile-bio">Sobre você</label>
+                  <textarea id="profile-bio" name="bio" rows="5" maxlength="2000"></textarea>
+                </div>
+              </div>
+              <div class="auth-actions">
+                <button class="btn" type="submit">Salvar perfil</button>
+              </div>
+            </form>
+            <div id="profile-locked">
+              <p>Entre na sua conta para ver ou editar o perfil.</p>
+              <button class="btn" type="button" data-auth="login" data-i18n="login">Entrar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="main.js"></script>
+    <script src="perfil.js"></script>
+  </body>
+</html>
